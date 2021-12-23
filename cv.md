@@ -2,9 +2,8 @@
 
 ## Web developer
 
-![avatar](avatar.jpg)
-
-<img src="./avatar.jpg" width="100" height="100">
+![avatar](assets/images/avatar.jpg)
+<img src="assets/images/avatar.jpg" width="100" height="100">
 
 ## Contacts
 * **Location:** Gomel, Belarus
