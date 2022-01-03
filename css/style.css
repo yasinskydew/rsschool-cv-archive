@@ -1,0 +1,410 @@
+@font-face {
+    font-family: "Next Art";
+    src: url("../fonts/NEXT ART_Regular.otf");
+}
+@font-face {
+    font-family: "Next Art Lite";
+    src: url("../fonts/NEXT ART_Light.otf");
+}
+@font-face {
+    font-family: "Arodora Pro Lite";
+    src: url("../fonts/ArodoraPro-Light.otf");
+}
+body {
+    font-family: 'Arodora', sans-serif;
+    color: #E4E4E4;
+    font-size: 14px;
+    font-weight: 500;
+    background: #282828;
+;
+}
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+._container {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+    box-sizing: content-box;
+
+}
+._ibg {
+    position: relative;
+}
+._ibg img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+/* ------ header ---- */
+.header {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 50;
+}
+.header__container {
+    display: flex;
+    min-height: 100px;
+    align-items: center;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo__text {
+    font-family: 'Next Art', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+.logo__image {
+    height: 48px;
+    margin: 0 10px 0 0;
+
+}
+.header__menu {
+    margin: 0 0 0 133px;
+}
+.menu__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.menu__item:not(:last-child) {
+    margin: 0 145px 0 0;
+}
+.menu__link {
+    color: #E4E4E4;
+    font-size: 18px;
+    font-family: 'Arodora Pro', sans-serif;
+    font-weight: 300;
+}
+.menu__link:hover {
+    transition: 0.15s;
+    border-bottom: 1px solid #E29500;
+}
+
+/* ------------ main -------------*/
+.page {
+    flex: 1 1 auto;
+}
+
+/* ------------ main-block -------------*/
+.main-block {
+    position: relative;
+}
+.main-block__container {
+    padding: 200px 0 191px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+/* ------------ main-block__body -------------*/
+
+.main-block__body {
+    position: relative;
+    z-index: 2;
+    max-width: 45%;
+}
+.main-block__body > *:not(:last-child) {
+    margin: 0 0 27px 0;
+}
+.main-block__hello {
+    font-family: "Next Art", sans-serif;
+    font-size: 48px;
+    font-weight: 600;
+}
+.main-block__title {
+    letter-spacing: 2px;
+    font-family: "Next Art", sans-serif;
+    font-size: 72px;
+    line-height: 81px;
+    font-weight: 800;
+}
+@media (max-width: 479px) {
+    .main-block__title {
+        font-size: 42px;
+    }
+
+}
+.main-block__text {
+    font-family: 'Arodora Pro Lite', sans-serif;
+    color: #E4E4E4;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 21px;
+}
+.main-block__image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.main-block__buttons {
+    display: inline-flex;
+
+}
+.main-block__button-orange:hover {
+    color: #E4E4E4;
+    transition: 0.15s;
+}
+.main-block__button:not(:last-child) {
+    margin: 0 10px 0 0;
+}
+.main-block__button {
+    font-family: 'Next Art', sans-serif;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 40px;
+    min-height: 47px;
+    letter-spacing: 0.2px;
+    font-weight: 700;
+    line-height: 150%;
+    text-align: center;
+}
+.main-block__button-orange {
+    background: rgba(226, 158, 0, 0.95);
+    color: #000000;
+}
+/* ------------ main-block__user -------------*/
+.main-block__user {
+    max-width: 45%;
+    position: relative;
+}
+
+.main-block__background {
+    width: 575px;
+    height: 575px;
+    border: 67px solid #00C4F0;
+    border-radius: 50%;
+    box-shadow: 0 0 50px rgba(0, 196, 240, 0.42);
+}
+
+.main-block__photo {
+    z-index: -1;
+    position: absolute;
+    left: 8%;
+    top: 10%;
+}
+.main-block__photo img {
+    height: 450px;
+}
+.main-block__skill {
+    font-family: 'Next Art', sans-serif;
+    font-weight: 700;
+    color: #00C4F0;
+    font-size: 36px;
+    width: 90px;
+    height: 90px;
+    background-color: #414141;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+.main-block__skill:nth-child(2) {
+    position: absolute;
+    left: 5%;
+    top: 5%;
+}
+.main-block__skill:nth-child(3) {
+    position: absolute;
+    right: 5%;
+    top: 0;
+}
+.main-block__skill:nth-child(4) {
+    position: absolute;
+    left: 6%;
+    top: 80%;
+}
+.main-block__skill:nth-child(5) {
+    position: absolute;
+    left: -10%;
+    top: 42%;
+}
+.header-block {
+    text-align: center;
+}
+.header-block__title {
+    line-height: 142%;
+    font-weight: 700;
+    font-size: 40px;
+    letter-spacing: 0.2px;
+}
+.header-block__sub-title {
+    font-size: 16px;
+    line-height: 142%;
+    letter-spacing: 0.2px;
+    font-weight: 500;
+    color: #a09a9a;
+}
+.header-block__title:not(:last-child) {
+    margin: 0 0 10px 0;
+}
+
+/* ----------------- page-skills -------------- */
+.skills__header {
+    margin: 0 0 50px 0;
+}
+.page-skills {
+    background-color: #414141;
+}
+.skills-container {
+    padding: 50px 0;
+}
+.skills-column {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    grid-gap: 30px 40px;
+}
+
+.skills__item {
+    width: 270px;
+    height: 270px;
+    background-color: #2A2A2A;
+    border-radius: 29px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.47);
+    padding: 55px 0 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.item-skill__icon {
+    height: 75px;
+    display: flex;
+}
+.item-skill__title {
+    font-family: 'Arodora Pro Lite', sans-serif;
+    color: #E4E4E4;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+/* ------------ advantages ----------*/
+.projects {
+    padding: 80px 0;
+}
+.projects__header {
+    margin: 0 0 50px 0;
+}
+.projects__body {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+    justify-content: space-around;
+    grid-gap: 30px 0;
+}
+.projects__column {
+    padding: 0 15px;
+    flex: 0 1 25%;
+}
+.projects__item {
+    width: 270px;
+    height: 180px;
+    border-radius: 3px;
+    background-color: #fff;
+    padding: 40px;
+    text-align: center;
+    font-weight: 700;
+}
+.projects__item:hover {
+   transition: 0.15s;
+   background-color: #dcdcdc;
+}
+.projects__item > *:not(:last-child) {
+    margin: 0 0 10px 0;
+}
+
+.projects__value {
+    color: #a09a9a;
+    font-size: 30px;
+    line-height: 142%;
+}
+.projects__text {
+    color: #737373;
+    line-height: 150%;
+    font-size: 16px;
+}
+
+/* ------------ example ---------*/
+
+.page-example {
+    background-color: #414141;
+}
+.example {
+    padding: 80px 0;
+}
+
+.example__body {
+    display: flex;
+    justify-content: center;
+}
+.example__header {
+    margin: 0 0 50px 0;
+}
+.example__column {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    line-height: 22px;
+    letter-spacing: 0.2px;
+    font-size: 18px;
+}
+.example__code {
+    padding: 20px;
+    background-color: #2A2A2A;
+}
+/* ------------ footer -----------*/
+
+.footer__container {
+    display: flex;
+    min-height: 200px;
+    align-items: center;
+}
+.footer__body {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 0 50px;
+}
+.footer__column_logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.footer__menu-list {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 20px 0;
+}
+.menu__link_footer {
+    font-size: 18px;
+    font-weight: 300;
+    color: #a09a9a;
+}
+
+@media (max-width: 890px) {
+    .footer__body {
+        flex-direction: column;
+        justify-content: center;
+        padding: 50px;
+        grid-row-gap: 50px;
+    }
+    .footer__column_logo {
+        grid-row-gap: 15px;
+    }
+
+}
