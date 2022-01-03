@@ -127,16 +127,32 @@ body {
     line-height: 81px;
     font-weight: 800;
 }
+
+.main-block__sub-title {
+    font-family: "Next Art", sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+}
+.main-block__lang-list {
+    margin: 15px 0;
+}
+.main-block__lang-item {
+    padding-bottom: 5px;
+    font-size: 18px;
+}
+
 @media (max-width: 479px) {
     .main-block__title {
         font-size: 42px;
     }
-
+    .main-block__sub-title {
+        font-size: 18px;
+    }
 }
 .main-block__text {
     font-family: 'Arodora Pro Lite', sans-serif;
     color: #E4E4E4;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 300;
     line-height: 21px;
 }
@@ -242,7 +258,7 @@ body {
     letter-spacing: 0.2px;
 }
 .header-block__sub-title {
-    font-size: 16px;
+    font-size: 20px;
     line-height: 142%;
     letter-spacing: 0.2px;
     font-weight: 500;
@@ -394,6 +410,10 @@ body {
     font-size: 18px;
     font-weight: 300;
     color: #a09a9a;
+}
+
+.logo__link {
+    background-color: #414141;
 }
 
 @media (max-width: 890px) {
